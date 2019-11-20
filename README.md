@@ -4,7 +4,7 @@
 |email|string||null: false|
 |password|string|null: false|
 |nickname|string|null: false|
-##Association
+## Association
 - has_many :tweets
 - has_many :comments
 
@@ -21,6 +21,7 @@
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
+|body|text|null: false|
 |image|string|null: false|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
