@@ -79,7 +79,6 @@ $(function () {
           var html = buildHTML(data);
           $('.messages').append(html);
           scroll_view();
-          $('#message_content').val("");
           $('.form__textfield').reset();
           $('.form__submit').prop('disabled', false);
           
