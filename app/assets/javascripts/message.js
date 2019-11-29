@@ -78,10 +78,10 @@ $(function () {
       .done(function (data) {
           var html = buildHTML(data);
           $('.messages').append(html);
-          form_reset();
+          
           scroll_view();
           $('#message_content').val("");
-          $('.form__textfield').val('');
+          $('.form__textfield').reset();
           $('.form__submit').prop('disabled', false);
           
       })
