@@ -78,7 +78,6 @@ $(function () {
       .done(function (data) {
           var html = buildHTML(data);
           $('.messages').append(html);
-          
           scroll_view();
           $('#message_content').val("");
           $('.form__textfield').reset();
